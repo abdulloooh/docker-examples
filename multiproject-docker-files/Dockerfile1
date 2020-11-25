@@ -1,0 +1,5 @@
+FROM ubuntu:14.04
+RUN apt-get -y update
+RUN apt-get install -y curl
+RUN curl https://google.com | wc -c > google-size
+ENTRYPOINT echo google is this big; cat google-size
