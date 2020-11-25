@@ -1,0 +1,3 @@
+FROM debian:sid
+CMD nano /tmp/notes
+#tag as deb

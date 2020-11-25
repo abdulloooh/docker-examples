@@ -1,0 +1,6 @@
+FROM deb
+RUN apt-get -y update
+RUN apt-get install -y nano
+CMD ["/bin/nano" , "/tmp/notes"]
+# can also be written as CMD nano /tmp/notes
+# tag as debnano
